@@ -1,6 +1,6 @@
 {
   "name": "@tamhub/tamtina",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A fork of Attina that allows passing Mermaid config and uses divs instead of iframes for diagrams.",
   "main": "dist/bundle.js",
   "repository": "https://github.com/obartra/tamtina.git",
