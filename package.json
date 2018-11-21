@@ -1,8 +1,8 @@
 {
   "name": "@tamhub/tamtina",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A fork of Attina that allows passing Mermaid config and uses divs instead of iframes for diagrams.",
-  "main": "tamtina.js",
+  "main": "dist/bundle.js",
   "repository": "https://github.com/obartra/tamtina.git",
   "author": "Omar Bahareth <omar@omar.engineer>",
   "license": "MIT",
@@ -15,7 +15,7 @@
   },
   "scripts": {
     "build": "webpack",
-    "start": "open docs/index.html",
+    "start": "open dist/index.html",
     "format": "prettier --write tamtina.js 'src/*.js'"
   },
   "devDependencies": {
