@@ -1,13 +1,17 @@
 import React from "react";
-import { mermaidAPI } from "mermaid";
+import {
+  mermaidAPI
+} from "mermaid";
 
 function getDiagram(title, input, callback) {
   mermaidAPI.render(title, input, diagram => {
-    callback({ diagram });
+    callback({
+      diagram
+    });
   });
 }
 
-class Attina extends React.Component {
+class Tamtina extends React.Component {
   constructor(props) {
     super(props);
     mermaidAPI.initialize(props.config);
@@ -23,25 +27,31 @@ class Attina extends React.Component {
     );
   }
 
-  componentWillReceiveProps({ diagram }) {
+  componentWillReceiveProps({
+    diagram
+  }) {
     getDiagram(this.props.title, diagram, state => this.setState(state));
   }
 
   render() {
-    return (
-      <div
-        {...this.props}
-        id="mermaid"
-        dangerouslySetInnerHTML={{ __html: this.state.diagram }}
+    return ( <
+      div { ...this.props
+      }
+      id = "mermaid"
+      dangerouslySetInnerHTML = {
+        {
+          __html: this.state.diagram
+        }
+      }
       />
     );
   }
 }
 
-Attina.defaultProps = {
+Tamtina.defaultProps = {
   title: "diagram",
-  frameBorder: 0
+  frameBorder: 0,
   config: {}
 };
 
-export default Attina;
+export default Tamtina;

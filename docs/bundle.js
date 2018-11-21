@@ -4804,7 +4804,7 @@ module.exports = root;
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  *
- * 
+ *
  */
 
 function makeEmptyFunction(arg) {
@@ -23728,7 +23728,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;!function() {
           svg.remove();
         }
       }
-      if (d3_mouse_bug44083) point.x = e.pageX, point.y = e.pageY; else point.x = e.clientX, 
+      if (d3_mouse_bug44083) point.x = e.pageX, point.y = e.pageY; else point.x = e.clientX,
       point.y = e.clientY;
       point = point.matrixTransform(container.getScreenCTM().inverse());
       return [ point.x, point.y ];
@@ -24103,7 +24103,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;!function() {
     }
     function mousewheeled() {
       var dispatch = event.of(this, arguments);
-      if (mousewheelTimer) clearTimeout(mousewheelTimer); else d3_selection_interrupt.call(this), 
+      if (mousewheelTimer) clearTimeout(mousewheelTimer); else d3_selection_interrupt.call(this),
       translate0 = location(center0 = center || d3.mouse(this)), zoomstarted(dispatch);
       mousewheelTimer = setTimeout(function() {
         mousewheelTimer = null;
@@ -24472,7 +24472,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;!function() {
   d3.xhr = d3_xhrType(d3_identity);
   function d3_xhrType(response) {
     return function(url, mimeType, callback) {
-      if (arguments.length === 2 && typeof mimeType === "function") callback = mimeType, 
+      if (arguments.length === 2 && typeof mimeType === "function") callback = mimeType,
       mimeType = null;
       return d3_xhr(url, mimeType, response, callback);
     };
@@ -25313,7 +25313,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;!function() {
     return n ? (date.y = d3_time_expandYear(+n[0]), i + n[0].length) : -1;
   }
   function d3_time_parseZone(date, string, i) {
-    return /^[+-]\d{4}$/.test(string = string.slice(i, i + 5)) ? (date.Z = -string, 
+    return /^[+-]\d{4}$/.test(string = string.slice(i, i + 5)) ? (date.Z = -string,
     i + 5) : -1;
   }
   function d3_time_expandYear(d) {
@@ -25506,7 +25506,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;!function() {
     var λ00, φ00, λ0, cosφ0, sinφ0;
     d3_geo_area.point = function(λ, φ) {
       d3_geo_area.point = nextPoint;
-      λ0 = (λ00 = λ) * d3_radians, cosφ0 = Math.cos(φ = (φ00 = φ) * d3_radians / 2 + π / 4), 
+      λ0 = (λ00 = λ) * d3_radians, cosφ0 = Math.cos(φ = (φ00 = φ) * d3_radians / 2 + π / 4),
       sinφ0 = Math.sin(φ);
     };
     function nextPoint(λ, φ) {
@@ -27335,7 +27335,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;!function() {
       return _ ? center([ -_[1], _[0] ]) : (_ = center(), [ _[1], -_[0] ]);
     };
     projection.rotate = function(_) {
-      return _ ? rotate([ _[0], _[1], _.length > 2 ? _[2] + 90 : 90 ]) : (_ = rotate(), 
+      return _ ? rotate([ _[0], _[1], _.length > 2 ? _[2] + 90 : 90 ]) : (_ = rotate(),
       [ _[0], _[1], _[2] - 90 ]);
     };
     return rotate([ 0, 0, 90 ]);
@@ -28189,7 +28189,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;!function() {
     };
     quadtree.extent = function(_) {
       if (!arguments.length) return x1 == null ? null : [ [ x1, y1 ], [ x2, y2 ] ];
-      if (_ == null) x1 = y1 = x2 = y2 = null; else x1 = +_[0][0], y1 = +_[0][1], x2 = +_[1][0], 
+      if (_ == null) x1 = y1 = x2 = y2 = null; else x1 = +_[0][0], y1 = +_[0][1], x2 = +_[1][0],
       y2 = +_[1][1];
       return quadtree;
     };
@@ -29914,7 +29914,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;!function() {
         return d3_layout_treemapPad(node, x);
       }
       var type;
-      pad = (padding = x) == null ? d3_layout_treemapPadNull : (type = typeof x) === "function" ? padFunction : type === "number" ? (x = [ x, x, x, x ], 
+      pad = (padding = x) == null ? d3_layout_treemapPadNull : (type = typeof x) === "function" ? padFunction : type === "number" ? (x = [ x, x, x, x ],
       padConstant) : padConstant;
       return treemap;
     };
@@ -30317,7 +30317,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;!function() {
     };
     scale.rangePoints = function(x, padding) {
       if (arguments.length < 2) padding = 0;
-      var start = x[0], stop = x[1], step = domain.length < 2 ? (start = (start + stop) / 2, 
+      var start = x[0], stop = x[1], step = domain.length < 2 ? (start = (start + stop) / 2,
       0) : (stop - start) / (domain.length - 1 + padding);
       range = steps(start + step * padding / 2, step);
       rangeBand = 0;
@@ -30329,7 +30329,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;!function() {
     };
     scale.rangeRoundPoints = function(x, padding) {
       if (arguments.length < 2) padding = 0;
-      var start = x[0], stop = x[1], step = domain.length < 2 ? (start = stop = Math.round((start + stop) / 2), 
+      var start = x[0], stop = x[1], step = domain.length < 2 ? (start = stop = Math.round((start + stop) / 2),
       0) : (stop - start) / (domain.length - 1 + padding) | 0;
       range = steps(start + Math.round(step * padding / 2 + (stop - start - (domain.length - 1 + padding) * step) / 2), step);
       rangeBand = 0;
@@ -30757,7 +30757,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;!function() {
     return points.length < 4 ? d3_svg_lineLinear(points) : points[1] + d3_svg_lineHermite(points.slice(1, -1), d3_svg_lineCardinalTangents(points, tension));
   }
   function d3_svg_lineCardinalClosed(points, tension) {
-    return points.length < 3 ? d3_svg_lineLinearClosed(points) : points[0] + d3_svg_lineHermite((points.push(points[0]), 
+    return points.length < 3 ? d3_svg_lineLinearClosed(points) : points[0] + d3_svg_lineHermite((points.push(points[0]),
     points), d3_svg_lineCardinalTangents([ points[points.length - 2] ].concat(points, [ points[1] ]), tension));
   }
   function d3_svg_lineCardinal(points, tension) {
@@ -31530,7 +31530,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;!function() {
         var g = d3.select(this);
         var scale0 = this.__chart__ || scale, scale1 = this.__chart__ = scale.copy();
         var ticks = tickValues == null ? scale1.ticks ? scale1.ticks.apply(scale1, tickArguments_) : scale1.domain() : tickValues, tickFormat = tickFormat_ == null ? scale1.tickFormat ? scale1.tickFormat.apply(scale1, tickArguments_) : d3_identity : tickFormat_, tick = g.selectAll(".tick").data(ticks, scale1), tickEnter = tick.enter().insert("g", ".domain").attr("class", "tick").style("opacity", ε), tickExit = d3.transition(tick.exit()).style("opacity", ε).remove(), tickUpdate = d3.transition(tick.order()).style("opacity", 1), tickSpacing = Math.max(innerTickSize, 0) + tickPadding, tickTransform;
-        var range = d3_scaleRange(scale1), path = g.selectAll(".domain").data([ 0 ]), pathUpdate = (path.enter().append("path").attr("class", "domain"), 
+        var range = d3_scaleRange(scale1), path = g.selectAll(".domain").data([ 0 ]), pathUpdate = (path.enter().append("path").attr("class", "domain"),
         d3.transition(path));
         tickEnter.append("line");
         tickEnter.append("text");
@@ -36819,7 +36819,7 @@ module.exports = EventListener;
  * LICENSE file in the root directory of this source tree.
  *
  * @typechecks
- * 
+ *
  */
 
 /*eslint-disable no-self-compare */
@@ -36891,7 +36891,7 @@ module.exports = shallowEqual;
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  *
- * 
+ *
  */
 
 var isTextNode = __webpack_require__(208);
@@ -51511,7 +51511,7 @@ var checkPropTypes = __webpack_require__(32);
  * LICENSE file in the root directory of this source tree.
  *
  * @providesModule reactProdInvariant
- * 
+ *
  */
 
 {
@@ -51797,7 +51797,7 @@ var ReactBaseClasses = {
  * LICENSE file in the root directory of this source tree.
  *
  * @providesModule ReactCurrentOwner
- * 
+ *
  */
 
 /**
@@ -52147,7 +52147,7 @@ var ReactElement_1 = ReactElement;
  * LICENSE file in the root directory of this source tree.
  *
  * @providesModule ReactDebugCurrentFrame
- * 
+ *
  */
 
 var ReactDebugCurrentFrame = {};
@@ -52512,7 +52512,7 @@ var onlyChild_1 = onlyChild;
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  *
- * 
+ *
  * @providesModule describeComponentFrame
  */
 
@@ -52527,7 +52527,7 @@ var describeComponentFrame$1 = function (name, source, ownerName) {
  * LICENSE file in the root directory of this source tree.
  *
  * @providesModule getComponentName
- * 
+ *
  */
 
 function getComponentName$1(instanceOrFiber) {
@@ -53593,7 +53593,7 @@ var getActiveElement = __webpack_require__(48);
  * LICENSE file in the root directory of this source tree.
  *
  * @providesModule reactProdInvariant
- * 
+ *
  */
 
 /**
@@ -53603,7 +53603,7 @@ var getActiveElement = __webpack_require__(48);
  * LICENSE file in the root directory of this source tree.
  *
  * @providesModule checkReact
- * 
+ *
  */
 
 
@@ -54075,7 +54075,7 @@ var ReactDOMComponentFlags_1 = ReactDOMComponentFlags;
  * LICENSE file in the root directory of this source tree.
  *
  * @providesModule ReactTypeOfWork
- * 
+ *
  */
 
 var ReactTypeOfWork = {
@@ -54403,7 +54403,7 @@ var ReactGlobalSharedState_1 = ReactGlobalSharedState;
  * LICENSE file in the root directory of this source tree.
  *
  * @providesModule getComponentName
- * 
+ *
  */
 
 function getComponentName(instanceOrFiber) {
@@ -54436,7 +54436,7 @@ var getComponentName_1 = getComponentName;
  * LICENSE file in the root directory of this source tree.
  *
  * @providesModule ReactTypeOfSideEffect
- * 
+ *
  */
 
 var ReactTypeOfSideEffect = {
@@ -55482,7 +55482,7 @@ var accumulateInto_1 = accumulateInto;
  * LICENSE file in the root directory of this source tree.
  *
  * @providesModule forEachAccumulated
- * 
+ *
  */
 
 /**
@@ -56330,7 +56330,7 @@ var dangerousStyleValue_1 = dangerousStyleValue;
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  *
- * 
+ *
  * @providesModule describeComponentFrame
  */
 
@@ -56677,7 +56677,7 @@ var ReactInvalidSetStateWarningHook_1 = ReactInvalidSetStateWarningHook;
  * LICENSE file in the root directory of this source tree.
  *
  * @providesModule ReactHostOperationHistoryHook
- * 
+ *
  */
 
 // Trust the developer to only use this with a true check
@@ -58056,7 +58056,7 @@ var assertValidProps_1 = assertValidProps;
  * LICENSE file in the root directory of this source tree.
  *
  * @providesModule inputValueTracking
- * 
+ *
  */
 
 function isCheckable(elem) {
@@ -58178,7 +58178,7 @@ var inputValueTracking_1 = inputValueTracking;
  * LICENSE file in the root directory of this source tree.
  *
  * @providesModule isCustomComponent
- * 
+ *
  */
 
 function isCustomComponent(tagName, props) {
@@ -60364,7 +60364,7 @@ var ReactDOMFrameScheduling = {
  * LICENSE file in the root directory of this source tree.
  *
  * @providesModule ReactFeatureFlags
- * 
+ *
  */
 
 var ReactFeatureFlags = {
@@ -60380,7 +60380,7 @@ var ReactFeatureFlags_1 = ReactFeatureFlags;
  * LICENSE file in the root directory of this source tree.
  *
  * @providesModule ReactPriorityLevel
- * 
+ *
  */
 
 var ReactPriorityLevel = {
@@ -60903,7 +60903,7 @@ var ReactFiberStack = {
  * LICENSE file in the root directory of this source tree.
  *
  * @providesModule ReactDebugFiberPerf
- * 
+ *
  */
 
 var ReactDebugFiberPerf = null;
@@ -61504,7 +61504,7 @@ var ReactFiberContext = {
  * LICENSE file in the root directory of this source tree.
  *
  * @providesModule ReactTypeOfInternalContext
- * 
+ *
  */
 
 var ReactTypeOfInternalContext = {
@@ -61886,7 +61886,7 @@ var ReactFiberErrorLogger = {
  * LICENSE file in the root directory of this source tree.
  *
  * @providesModule ReactCoroutine
- * 
+ *
  */
 
 // The Symbol used to tag the special React types. If there is no native Symbol
@@ -61974,7 +61974,7 @@ var ReactCoroutine = {
  * LICENSE file in the root directory of this source tree.
  *
  * @providesModule ReactPortal
- * 
+ *
  */
 
 // The Symbol used to tag the special React types. If there is no native Symbol
@@ -65502,7 +65502,7 @@ var ReactFiberHydrationContext = function (config) {
  * LICENSE file in the root directory of this source tree.
  *
  * @providesModule ReactFiberInstrumentation
- * 
+ *
  */
 
 // This lets us hook into Fiber to debug what it's doing.
@@ -66857,7 +66857,7 @@ var ReactFiberScheduler = function (config) {
  * LICENSE file in the root directory of this source tree.
  *
  * @providesModule getContextForSubtree
- * 
+ *
  */
 
 
@@ -67367,7 +67367,7 @@ var ReactVersion = '16.0.0';
  * LICENSE file in the root directory of this source tree.
  *
  * @providesModule findDOMNode
- * 
+ *
  */
 
 
@@ -68132,7 +68132,7 @@ var EventPropagators_1 = EventPropagators;
  * both its text content and its current position in the DOM. Since the
  * browser may natively replace the target node during composition, we can
  * use its position to find its replacement.
- * 
+ *
  *
  */
 var compositionState = {
@@ -68896,7 +68896,7 @@ var BeforeInputEventPlugin_1 = BeforeInputEventPlugin;
  * LICENSE file in the root directory of this source tree.
  *
  * @providesModule isTextInputElement
- * 
+ *
  */
 
 /**
@@ -71662,9 +71662,9 @@ var _react = __webpack_require__(14);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _attina = __webpack_require__(221);
+var _tamtina = __webpack_require__(221);
 
-var _attina2 = _interopRequireDefault(_attina);
+var _tamtina2 = _interopRequireDefault(_tamtina);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -71689,7 +71689,7 @@ var App = function (_React$Component) {
       return _react2.default.createElement(
         "div",
         { className: "App" },
-        _react2.default.createElement(_attina2.default, {
+        _react2.default.createElement(_tamtina2.default, {
           name: "diagram",
           style: { width: 500, height: 500 },
           diagram: "graph TD; A-->B; A-->C; B-->D; C-->D;"
@@ -71740,13 +71740,13 @@ function getDiagram(title, input, callback) {
   });
 }
 
-var Attina = function (_React$Component) {
-  _inherits(Attina, _React$Component);
+var Tamtina = function (_React$Component) {
+  _inherits(Tamtina, _React$Component);
 
-  function Attina(props) {
-    _classCallCheck(this, Attina);
+  function Tamtina(props) {
+    _classCallCheck(this, Tamtina);
 
-    var _this = _possibleConstructorReturn(this, (Attina.__proto__ || Object.getPrototypeOf(Attina)).call(this, props));
+    var _this = _possibleConstructorReturn(this, (Tamtina.__proto__ || Object.getPrototypeOf(Tamtina)).call(this, props));
 
     _this.state = {
       diagram: "Loading..."
@@ -71754,7 +71754,7 @@ var Attina = function (_React$Component) {
     return _this;
   }
 
-  _createClass(Attina, [{
+  _createClass(Tamtina, [{
     key: "componentWillMount",
     value: function componentWillMount() {
       var _this2 = this;
@@ -71787,15 +71787,15 @@ var Attina = function (_React$Component) {
     }
   }]);
 
-  return Attina;
+  return Tamtina;
 }(_react2.default.Component);
 
-Attina.defaultProps = {
+Tamtina.defaultProps = {
   title: "diagram",
   frameBorder: 0
 };
 
-exports.default = Attina;
+exports.default = Tamtina;
 
 /***/ }),
 /* 222 */

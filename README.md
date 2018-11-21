@@ -1,4 +1,6 @@
-# Attina 🐟
+# Tamtina 🐟
+
+**This is just a fork of Attina that allows passing Mermaid config and uses divs instead of iframes for diagrams.**
 
 Mermaid react renderer compatible with React 15.5+ based off [React Mermaid](https://github.com/jasonbellamy/react-mermaid)
 
@@ -9,13 +11,13 @@ Uses [Mermaid](https://mermaidjs.github.io/mermaidAPI.html) under the hood
 Install with:
 
 ```shell
-$ yarn add attina
+$ yarn add tamtina
 ```
 
 ## Usage
 
 ```js
-<Attina
+<Tamtina
   diagram={`
     graph TD;
     A-->B;
