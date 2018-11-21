@@ -28,10 +28,9 @@ class Attina extends React.Component {
   }
 
   render() {
-    const { ...props } = this.props;
     return (
       <div
-        {...props}
+        {...this.props}
         id="mermaid"
         dangerouslySetInnerHTML={{ __html: this.state.diagram }}
       />
