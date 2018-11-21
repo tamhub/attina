@@ -15,7 +15,8 @@
   },
   "scripts": {
     "build": "webpack",
-    "start": "open docs/index.html"
+    "start": "open docs/index.html",
+    "format": "prettier --write tamtina.js 'src/*.js'"
   },
   "devDependencies": {
     "babel-core": "6.26.0",
@@ -23,6 +24,7 @@
     "babel-plugin-transform-object-rest-spread": "6.26.0",
     "babel-preset-env": "1.6.0",
     "babel-preset-react": "6.24.1",
+    "prettier": "^1.15.2",
     "react": "16.0.0",
     "react-dom": "16.0.0",
     "webpack": "3.7.1"
