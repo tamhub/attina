@@ -29,22 +29,12 @@ class Attina extends React.Component {
 
   render() {
     const { style = "", ...props } = this.props;
-    const template = `
-    <html>
-      <body>
-        <style>
-          body {
-            margin: 0;
-            padding: 0;
-          }
-          ${style}
-        </style>
-        ${this.state.diagram}
-      </body>
-    </html>
-    `;
     return (
-      <iframe {...props} src={`data:text/html;charset=utf-8,${template}`} />
+      <div
+        {...props}
+        id="mermaid"
+        dangerouslySetInnerHTML={{ __html: this.state.diagram }}
+      />
     );
   }
 }
