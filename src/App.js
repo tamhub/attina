@@ -1,5 +1,5 @@
-import React from "react";
-import Tamtina from "../tamtina";
+import React from "react"
+import Tamtina from "../tamtina"
 
 class App extends React.Component {
   render() {
@@ -11,8 +11,8 @@ class App extends React.Component {
           diagram="graph TD; A-->B; A-->C; B-->D; C-->D;"
         />
       </div>
-    );
+    )
   }
 }
 
-export default App;
+export default App
