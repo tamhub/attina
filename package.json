@@ -1,10 +1,10 @@
 {
-  "name": "attina",
-  "version": "1.0.1",
-  "description": "mermaid's react viewer",
+  "name": "tamtina",
+  "version": "1.0.0",
+  "description": "A fork of Attina that allows passing Mermaid config and uses divs instead of iframes for diagrams.",
   "main": "attina.js",
   "repository": "https://github.com/obartra/attina.git",
-  "author": "Oscar Bartra <obartra@gmail.com>",
+  "author": "Omar Bahareth <omar@omar.engineer>",
   "license": "MIT",
   "peerDependencies": {
     "react": ">=15.0.0",
