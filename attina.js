@@ -28,7 +28,7 @@ class Attina extends React.Component {
   }
 
   render() {
-    const { style = "", ...props } = this.props;
+    const { ...props } = this.props;
     return (
       <div
         {...props}
