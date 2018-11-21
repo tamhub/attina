@@ -10,6 +10,7 @@ function getDiagram(title, input, callback) {
 class Attina extends React.Component {
   constructor(props) {
     super(props);
+    mermaidAPI.initialize(props.config);
 
     this.state = {
       diagram: "Loading..."
@@ -51,6 +52,7 @@ class Attina extends React.Component {
 Attina.defaultProps = {
   title: "diagram",
   frameBorder: 0
+  config: {}
 };
 
 export default Attina;
