@@ -1,0 +1,7 @@
+.vscode
+img
+node_modules
+src
+.prettierrc
+yarn.lock
+webpack.config.js
