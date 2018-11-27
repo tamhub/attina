@@ -1,50 +1,22 @@
 import React from "react"
-import { mermaidAPI } from "mermaid"
-
-function getDiagram(title, input, callback) {
-  mermaidAPI.render(title, input, diagram => {
-    callback({
-      diagram
-    })
-  })
-}
+import mermaid from "mermaid"
 
 class Tamtina extends React.Component {
   constructor(props) {
     super(props)
-    mermaidAPI.initialize(props.config)
-
-    this.state = {
-      diagram: "Loading..."
-    }
+    mermaid.initialize(props.config)
   }
 
-  componentWillMount() {
-    getDiagram(this.props.title, this.props.diagram, state =>
-      this.setState(state)
-    )
-  }
-
-  componentWillReceiveProps({ diagram }) {
-    getDiagram(this.props.title, diagram, state => this.setState(state))
+  componentDidMount() {
+    mermaid.contentLoaded()
   }
 
   render() {
-    return (
-      <div
-        {...this.props}
-        id="mermaid"
-        dangerouslySetInnerHTML={{
-          __html: this.state.diagram
-        }}
-      />
-    )
+    return <div className="mermaid">{this.props.diagram}</div>
   }
 }
 
 Tamtina.defaultProps = {
-  title: "diagram",
-  frameBorder: 0,
   config: {}
 }
 
