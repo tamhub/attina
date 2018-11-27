@@ -1,6 +1,6 @@
 {
   "name": "@tamhub/tamtina",
-  "version": "1.0.8",
+  "version": "1.0.11",
   "description": "A fork of Attina that allows passing Mermaid config and uses divs instead of iframes for diagrams.",
   "main": "dist/bundle.js",
   "repository": "https://github.com/obartra/tamtina.git",
@@ -12,6 +12,9 @@
   },
   "dependencies": {
     "mermaid": "^8.0.0-rc.8"
+  },
+  "resolutions": {
+    "d3-selection": "1.3.2"
   },
   "scripts": {
     "build": "webpack",
