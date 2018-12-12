@@ -17,7 +17,7 @@
     "d3-selection": "1.3.2"
   },
   "scripts": {
-    "build": "webpack",
+    "build": "rollup -c -o dist/bundle.js",
     "start": "open dist/index.html",
     "format": "prettier --write tamtina.js 'src/*.js'"
   },
@@ -30,6 +30,9 @@
     "prettier": "^1.15.2",
     "react": "16.0.0",
     "react-dom": "16.0.0",
+    "rollup": "^0.67.4",
+    "rollup-plugin-babel": "^4.0.3",
+    "rollup-plugin-uglify": "^6.0.0",
     "webpack": "3.7.1"
   }
 }
