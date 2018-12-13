@@ -1,5 +1,7 @@
 # Tamtina 🐟
 
+### WARNING: 1.1.x is broken, please use 1.0.x
+
 **This is just a fork of Attina that allows passing Mermaid config and uses divs instead of iframes for diagrams.**
 
 Mermaid react renderer compatible with React 15.5+ based off [React Mermaid](https://github.com/jasonbellamy/react-mermaid)
